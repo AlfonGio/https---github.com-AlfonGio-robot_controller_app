@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  min-height: 85vh;
+}
+
+/* Base styles for the button */
+.button {
+  padding: 10px 20px;
+  border: 2px solid green; /* Green border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color and background */
+}
+
+/* Styles for the "Connect" state */
+.status-button-connect {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the "Disconnect" state */
+.button-disconnect {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the button when active/pressed */
+.status-button-connect:active {
+  padding: 10px 20px;
+  background-color: white; /* White fill */
+  color: green; /* Green text */
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for robot status card */
+.robot-status-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 300px; /* Adjust as needed */
+  margin: auto;
+}
+
+.robot-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-indicator {
+  height: 10px;
+  width: 10px;
+  background-color: #4CAF50; /* Active green color */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.robot-status-content {
+  margin-bottom: 20px;
+}
+
+.status-item {
+  margin-bottom: 10px;
+}
+
+.status-item label {
+  font-weight: bold;
+  display: block;
+  color: #333;
+}
+
+.robot-status-footer {
+  text-align: center;
+}
+
+/* Styles for map card */
+.map-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: fit-content; /* Adjust as needed */
+  margin: auto;
+}
